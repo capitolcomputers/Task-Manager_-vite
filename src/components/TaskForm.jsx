@@ -5,7 +5,6 @@ const TaskForm = (props) => {
     const { addTask, removeTask } = useContext(TaskListContext);
     const [title, setTitle] = useState("");
     
-
     const handleSubmit = (e) => {
         e.preventDefault();
         addTask(title);

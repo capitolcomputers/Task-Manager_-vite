@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export const TaskListContext = createContext();
 
-const TaskListContextProvider = (props) => {
+const TaskListContextProvider = props => {
   const [tasks, setTasks] = useState([
     { title: "Read a book", id: 1 },
     { title: "Wash the dishes", id: 2 },
